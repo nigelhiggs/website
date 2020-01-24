@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+	<input type="file" id="openFile" />
+	<br>
+	<pre id="Filecontents"></pre>
+	
+<script> 
+// Requiring fs module in which  
+// readFile function is defined. 
+const fs = require('fs') 
+  
+fs.readFile('names.txt', (err, data) => { 
+    if (err) throw err; 
+  
+    console.log(data.toString()); 
+}) 
+</script> 
+</body>
+</html>

@@ -5,6 +5,15 @@
 <meta charset="UTF-8">
   <title>Linn County</title>
 
+<style>
+      table, th, td {
+      padding: 10px;
+      border: 1px solid black; 
+      border-collapse: collapse;
+      }
+ </style>
+
+
 
 </head>
 
@@ -29,7 +38,7 @@
 		<tr>
 			<td>Jill</td>
 			<td>Smith</td>
-			<td><img src="139153.jpg" width = "200" height = "250"></td>
+			<td><img src="139153.jpg" width = "200" height = "250" alt="Inmate"></td>
 		</tr>
 		<tr>
 			<td>Eve</td>
@@ -38,6 +47,26 @@
 		</tr>
 
 	</table>
+	<br>
+	<script>
+	
+		var table="";
+		var rows = 2;
+		var colmns=3;
+		
+		for(var r =0;r<rows; r++)
+		{
+			table+='<tr>';
+			for(var c =0; c<colmns; c++)
+			{
+					table+='<td>'+c+'</td>'
+				
+			}
+		}
+		document.write('<table style = "width:100%">' + table + '</table>')
+	</script>
+	
+	
 </table>
 </body>
 
